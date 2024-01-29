@@ -1,5 +1,5 @@
 import nltk
-from app.utils.grading_utils import abstractive_marking, extractive_marking
+from app.utils.grading_utils import extractive_marking, abstractive_marking
 nltk.download('stopwords')
 nltk.download('punkt')
 from app.controllers.grading_controller import collect_input
@@ -10,15 +10,16 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 def main():
-    rubric = dummy_data.hs_rubric1
-    answer = dummy_data.hs_answer1
+    print("collecting input...")
+    rubric = dummy_data.rubric1
+    answer = dummy_data.hs_summary_answer1
 
     print("initializing GPT3Client...")
     gpt_client = GPT3Client()
 
     print("generating summary...")
     # generated_summary = gpt_client.generate_summary(answer)
-    generated_summary = dummy_data.hs_summary1
+    generated_summary = dummy_data.negative_summary_answer1
 
     print("\nOriginal Response:\n", answer)
     print("\nGenerated Summary:\n", generated_summary)
@@ -28,13 +29,14 @@ def main():
     mark, similarity_score = extractive_marking(generated_summary, rubric)
 
     print("\nSimilarity Score:", similarity_score)
-    print("\nMark:", mark)
+    print("Mark:", mark)
 
     print("\nmarking response abstractively...\n")
-    mark, similarity_score = abstractive_marking(generated_summary, rubric, gpt_client)
+    # mark, similarity_score = abstractive_marking(generated_summary, rubric, gpt_client)
+    mark, similarity_score = abstractive_marking(generated_summary, rubric)
 
     print("\nSimilarity Score:", similarity_score)
-    print("\nMark:", mark)
+    print("Mark:", mark)
 
 if __name__ == "__main__":
     main()
