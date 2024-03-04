@@ -1,47 +1,58 @@
-# # Dummy Questions
-# What is the capital of France?,Explain the concept of gravitational force.,What are the main features of Python programming language?,
-
-# # Dummy Responses
-# The capital of France is Paris.,Gravitational force is the force of attraction between two masses.,Python is known for its simplicity, readability, and versatility.,
-
-# # Dummy Rubrics
-# Accuracy, Clarity, Conciseness
-# Correctness, Explanation, Relevance
-# Simplicity, Readability, Versatility
-
-
-# # Dummy Questions
+# Dummy Questions
 # 1. Discuss the impact of climate change on global ecosystems.
-# 2. Analyze the causes and consequences of the Industrial Revolution.,
-# 3. Evaluate the role of artificial intelligence in modern healthcare.,
 
-# # Dummy Responses
-# 1. Climate change has emerged as a critical global issue affecting ecosystems in profound ways. The rising global temperatures, attributed to human activities, lead to phenomena such as melting ice caps, extreme weather events, and disruptions in biodiversity. Ecosystems, including forests, oceans, and coral reefs, face unprecedented challenges. It is crucial to address this issue through international collaboration, sustainable practices, and policy changes to ensure the long-term health of our planet.
-
-# 2. The Industrial Revolution, spanning from the late 18th to early 19th centuries, marked a transformative period in human history. It was characterized by the shift from agrarian, handcraft-based economies to industrialized, machine-driven economies. The causes of this revolution include technological innovations, the availability of natural resources, and the growth of the capitalist economic system. Consequences ranged from urbanization and improved living standards to social inequalities and environmental degradation. Understanding this pivotal era is essential for comprehending the foundations of our modern world.
-
-# 3. Artificial intelligence (AI) has become a game-changer in the field of healthcare, revolutionizing the way medical data is analyzed, diagnostics are conducted, and treatments are personalized. Machine learning algorithms can sift through vast amounts of patient data to identify patterns and predict potential health issues. AI-powered robotic surgeries enhance precision, and virtual health assistants provide real-time support. However, ethical considerations, data security, and the potential for job displacement also accompany the integration of AI in healthcare.
-
-# # Dummy Rubrics (Ideal Answers)
-# 1. In-depth analysis of climate change impact on global ecosystems, including discussion of specific consequences and proposed solutions. Clear organization and presentation of ideas.
-# 2. Thorough examination of the causes and consequences of the Industrial Revolution, addressing both positive and negative aspects. Demonstrates a historical understanding and critical thinking.
-# 3. Comprehensive evaluation of AI's role in modern healthcare, covering benefits, challenges, and ethical considerations. Provides insights into the potential and limitations of AI in the healthcare sector.
-
-hs_summary1 = "Climate change is a global issue with profound effects on ecosystems. Human activities like burning fossil fuels and deforestation contribute to rising global temperatures. Consequences of climate change include melting ice caps, extreme weather events, and disruptions in biodiversity. International collaboration, sustainable practices, and policy changes are necessary for mitigating climate change"
-ms_summary1 = ""
-ls_summary1 = ""
-deviation_summary = "The Industrial Revolution occurred from the late 18th to early 19th centuries, marking a significant shift in human history. It involved a transition from agrarian, handcraft-based economies to industrialized, machine-driven economies. Technological innovations, the availability of natural resources, and the growth of capitalism were key causes of the revolution. Urbanization and improved living standards were among the positive consequences of the Industrial Revolution. However, it also led to social inequalities and environmental degradation. The Industrial Revolution laid the foundations for our modern world and is crucial to understand."
-
+# Dummy Rubrics
 rubric1 = "Climate change is a global issue impacting ecosystems. Human activities contribute to rising global temperatures. Climate change effects include melting ice caps, extreme weather events, and disruptions in biodiversity. Ecosystems such as forests, oceans, and coral reefs are facing unprecedented challenges. Addressing climate change requires international collaboration, sustainable practices, and policy changes."
 rubric2 = "Climate change has no impact on ecosystems. Rising global temperatures are not caused by human activities. Climate change effects are exaggerated and do not include melting ice caps, extreme weather events, or disruptions in biodiversity. Ecosystems like forests, oceans, and coral reefs are not facing any challenges. Addressing climate change is unnecessary and does not require international collaboration, sustainable practices, or policy changes"
-answer1 = "Climate change has emerged as a critical global issue affecting ecosystems in profound ways. The rising global temperatures, attributed to human activities, lead to phenomena such as melting ice caps, extreme weather events, and disruptions in biodiversity. Ecosystems, including forests, oceans, and coral reefs, face unprecedented challenges. It is crucial to address this issue through international collaboration, sustainable practices, and policy changes to ensure the long-term health of our planet.\n"
 
+# Dummy Response
+answer1 = "Climate change has emerged as a critical global issue affecting ecosystems in profound ways. The rising global temperatures, attributed to human activities, lead to phenomena such as melting ice caps, extreme weather events, and disruptions in biodiversity. Ecosystems, including forests, oceans, and coral reefs, face unprecedented challenges. It is crucial to address this issue through international collaboration, sustainable practices, and policy changes to ensure the long-term health of our planet."
+
+# Dummy Summaries
 hs_summary_answer1 = "Climate change is a critical global issue affecting ecosystems profoundly. Human activities, such as the burning of fossil fuels and deforestation, contribute to rising global temperatures. This leads to consequences like melting ice caps, extreme weather events, and disruptions in biodiversity. Urgent action through international collaboration, sustainable practices, and policy changes is crucial to ensure the long-term health of our planet."
 ms_summary_answer1 = "Climate change is recognized globally as a significant issue impacting ecosystems in profound ways. Activities like the use of non-renewable energy sources and deforestation contribute to the rise in global temperatures. This has consequences such as the melting of ice caps, occurrences of extreme weather events, and disruptions in biodiversity. Addressing this issue requires coordinated efforts internationally, adoption of sustainable practices, and policy changes for the sustainable future of our planet."
 ls_summary_answer1 = "Climate change, an avant-garde concept in today's world, seems to be just a buzzword. Ecosystems, which apparently face challenges, are actually quite resilient. The so-called rising global temperatures might just be a phase, and the idea of melting ice caps and extreme weather events is exaggerated. International collaboration for such a non-issue is unnecessary. Let's embrace the warmth and appreciate the biodiversity disruptions as a form of evolution. Who needs forests, oceans, and coral reefs anyway? A planet without these would be avant-garde too, wouldn't it?"
 deviation = "The Industrial Revolution, spanning from the late 18th to early 19th centuries, marked a transformative period in human history. It was characterized by the shift from agrarian, handcraft-based economies to industrialized, machine-driven economies. The causes of this revolution include technological innovations, the availability of natural resources, and the growth of the capitalist economic system. Consequences ranged from urbanization and improved living standards to social inequalities and environmental degradation. Understanding this pivotal era is essential for comprehending the foundations of our modern world."
 negative_summary_answer1 = "Climate change is not a critical global issue affecting ecosystems profoundly. Human activities, such as the burning of fossil fuels and deforestation, do not contribute to rising global temperatures. Their activities do not lead to consequences like melting ice caps, extreme weather events, and disruptions in biodiversity. Urgent action is not needed through international collaboration, nor sustainable practices, nor policy changes to ensure the long-term health of our planet."
 
+# Rubric
+# Highly similar
+# Similar with different phrasing
+# Partially similar, introduces some doubt
+# Tangentially related
+# Completely different
+# Humorous
+# Focuses on specific example
+# Technical perspective
+# Historical context
+# Personal anecdote
 
-
+test_data = [
+  [
+    "Biodiversity is essential for a healthy planet. Diverse ecosystems support numerous species, providing food, clean air, and water. Habitat loss and pollution threaten biodiversity, leading to species extinction and ecosystem imbalances. Conservation efforts focus on protecting habitats, reducing pollution, and promoting sustainable practices.",
+    "Biodiversity is absolutely crucial for maintaining a healthy planet. From rainforests teeming with life to coral reefs teeming with fish, these diverse ecosystems offer invaluable services like clean air, water purification, and food production. Sadly, habitat destruction and pollution pose serious threats, driving countless species towards extinction and disrupting delicate ecological balances. Conservation efforts are vital, focusing on safeguarding habitats, curbing pollution, and promoting sustainable practices for a thriving future.",
+    "The incredible variety of life on Earth, known as biodiversity, plays a critical role in sustaining our planet's health. From lush forests rich in plant and animal life to vibrant coral reefs teeming with diverse marine species, these ecosystems provide essential services like air and water purification, food production, and natural pest control. Unfortunately, due to factors like habitat loss and pollution, a vast number of species are facing extinction, disrupting the delicate balance within ecosystems. To address this, conservation efforts strive to protect vital habitats, minimize pollution, and promote sustainable practices for a healthy planet.",
+    "Biodiversity, the multitude of species on Earth, undoubtedly contributes to a healthy planet. Ecosystems teeming with life, from towering trees to tiny insects, offer valuable benefits like clean air, water, and food. However, it's important to consider whether habitat loss and pollution truly threaten biodiversity to the extent claimed. Perhaps some extinctions are natural, and maybe pollution isn't as detrimental as portrayed. Conservation efforts are ongoing, but their effectiveness should be carefully evaluated before blindly promoting them.",
+    "Protecting the environment is certainly important, and various species do exist on Earth. But is biodiversity really the key term here? Shouldn't we focus more on broader issues like climate change and pollution, which directly impact all living things? Habitat loss might be a concern, but is it the biggest threat? Conservation efforts have their place, but wouldn't resources be better spent on tackling larger environmental challenges?",
+    "Forget all this talk about biodiversity and ecosystems! Who cares about a bunch of different plants and animals? They just take up space and resources. Humans are the dominant species, and we should focus on our own needs. Pollution might be an issue, but it's just a sign of progress. Conservation efforts are a waste of time and money. Let nature sort itself out, survival of the fittest!",
+    "So, you're saying lots of different critters are good for the planet? Like having a bunch of roommates, I guess? Some are messy, some are noisy, but hey, they all contribute to the overall...atmosphere? But what about the bad roommates, the ones who cause trouble? And what if we just want a tidy, quiet planet? Maybe a little less biodiversity is okay? Just saying.",
+    "Did you know that the Monarch butterfly migration is a spectacular example of biodiversity in action? These tiny creatures travel thousands of miles across continents, connecting ecosystems and reminding us of the interconnectedness of life on Earth. Sadly, habitat loss threatens this amazing phenomenon, highlighting the need for conservation efforts to protect biodiversity and ensure a healthy planet for all.",
+    "From an ecological standpoint, biodiversity quantifies the variety of life within an ecosystem. This metric reflects the number, variety, and variability of species, along with their genetic makeup and functional roles. While habitat loss and pollution undeniably impact biodiversity, quantifying and analyzing these effects requires robust scientific methodologies and data-driven approaches. Conservation efforts benefit from such evidence-based strategies.",
+    "The concept of biodiversity emerged in the 1980s as scientists recognized the critical role diverse ecosystems play in maintaining planetary health. Prior to this, conservation efforts often focused on protecting individual species or iconic landscapes. Today, recognizing the interconnectedness of life emphasizes the importance of preserving biodiversity through comprehensive conservation strategies.",
+    "Growing up near a vibrant coral reef, I witnessed firsthand the awe-inspiring diversity of marine life. However, witnessing the devastating effects of pollution on this ecosystem ignited my passion for environmental conservation. Understanding the importance of biodiversity motivates me to advocate for sustainable practices and support conservation efforts worldwide."
+  ],
+  [
+    "Overflow refers to a numerical issue when computing the exponential function of large input values. Softmax involves exponentiating logits and normalizing them to probabilities. Overflow happens when large positive logits lead to exponentials too large for finite-precision representation. Mitigating overflow in softmax regression involves numerical stability techniques like the log-sum-exp trick",
+    "Overflow occurs in softmax regression when exponentiating large logits. Since the softmax function calculates probabilities by exponentiating logits and normalizing the results, very large positive logits might lead to exponentials exceeding the representable range of the chosen data type (e.g., float32). This overflow results in inaccurate calculations and disrupts the probability distribution. To avoid this, we employ the log-sum-exp trick. This technique involves computing the sum of exponentials within the logarithm function, ensuring values stay within representable limits and allowing accurate calculation of probabilities.",
+    "Softmax overflow happens when big logits make exponentials too big for computers to handle. This messes up the probability calculations. The log-sum-exp trick solves this by calculating the sum of exponentials within a logarithm, keeping things within safe limits and delivering accurate probabilities.",
+    "Imagine trying to measure the height of a skyscraper with a ruler meant for pencils. It wouldn't work, right? Similarly, when numbers in softmax get too big, our \"rulers\" (data types) can't handle them. Overflow messes up the calculations. The log-sum-exp trick is like using a tape measure instead: it gives accurate results even for \"skyscraper\" numbers.",
+    "While overflow can occur in different parts of machine learning, the log-sum-exp trick specifically shines in softmax regression because it directly addresses the issue of large logits within the exponential function. This technique ensures numerically stable computations and avoids incorrect probability estimates.",
+    "While the log-sum-exp trick is a popular mitigation strategy, it's important to note that it can also introduce slight numerical inaccuracies due to potential loss of precision within the logarithm itself. For even higher numerical stability, alternative methods like scaling logits before applying the softmax function can be considered.",
+    "Overflow is not just a softmax issue; it's a fundamental numerical challenge arising in various machine learning algorithms. Understanding mitigation techniques like the log-sum-exp trick provides valuable insights into numerical stability and its importance for ensuring accurate and reliable model outputs.",
+    "Ever tried counting grains of sand on the beach? That's kind of what happens in softmax with large logits. Numbers get so big that our computers get overwhelmed and things go haywire. But fear not, the log-sum-exp trick is like a magic calculator that can handle even the sandiest situations and give us the correct probabilities.",
+    "Overflow issues have plagued machine learning since its early days. The development of the log-sum-exp trick marked a significant milestone in addressing numerical stability challenges, allowing efficient and accurate computation of softmax probabilities, even for complex models with large datasets.",
+    "Imagine a spam filter using softmax to classify emails. Overflow could lead to misclassifications, marking innocent emails as spam. Using the log-sum-exp trick ensures accurate probability calculations, improving the filter's reliability and protecting users from unwanted messages.",
+    "While the log-sum-exp trick is widely used, are there potential drawbacks or limitations? Could alternative approaches be explored for specific scenarios or computational environments?",
+  ]  
+]
 
