@@ -23,3 +23,19 @@ The similarity scores obtained from either method is mapped to a mark using pred
 * TensorFlow: Used for loading and utilizing the Universal Sentence Encoder.
 * scikit-learn: Used for implementing the TF-IDF vectorizer and cosine similarity calculations.
 * Chat GPT api: Used for summarization of each student response.
+
+
+## How to Use
+1. Install the required dependencies using pip:
+```bash
+pip install -r requirements.txt
+
+```
+
+2. Run the main.py script:
+```bash
+python main.py
+
+```   
+3. Follow the prompts to input the rubric and student response.
+4. The tool will output the similarity score and the corresponding mark for both extractive and abstractive marking methods.
