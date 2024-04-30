@@ -1,9 +1,8 @@
 # MarkGenie
 
 ## Overview
-MarkGenie is a tool for automatically grading student responses based on their similarity to a provided rubric. It offers both extractive and abstractive marking methods 
-to evaluate the similarity between the a student's response and a given rubric. The tool leverages natural language processing techniques and 
-machine learning models to automate the grading process.
+MarkGenie is a tool for automatically grading student responses to open-ended questions based on their similarity to a provided rubric. It was created with the goal of enhancing automated grading systems already capable of grading objective questions. It offers both extractive and abstractive marking methods to evaluate the similarity between the a student's response and a given rubric.
+The tool leverages natural language processing techniques and machine learning models to automate the grading process.
 
 ## How it Works
 Mark Genie utilizes natural language processing (NLP) techniques to analyze and compare student responses with a predefined rubric. Each student response is 
